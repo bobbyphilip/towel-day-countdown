@@ -1,44 +1,43 @@
 ---
 marp: true
-theme: neobeam
+theme: uncover
 paginate: true
-footer: '**App Packaging On Linux**'
+footer: 'App packaging in Linux'
+style: |
+  section.center > footer, footer {
+    text-align: left !important;
+    margin: 0 !important;
+  }
+  header strong {
+    color: #000000;
+    font-size: 4.0em; /* Make it larger */
+    font-weight: 800; /* Extra bold */
+  }
+  section {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  
 ---
-<!-- _class: title -->
-# App Packaging on Linux
->
-### Bobby Alex Philip 
 
----
-<!-- header: 'Overview' -->
+# App Packaging in Linux 
 
-![Image of an iceberg showing various layers in a linux application from distros to kernel. heigh:50px  center](./assets/iceberg.png) 
-
----
-<!-- header: 'Normal text' -->
-**This** is what a regular slide can look like in Neobeam.
-- A cool fact
-- Interesting tidbit
-
-A set of cool letters:
-1. A
-2. B
-3. C
-
-A quote from media
-> *"Listen to me, olive oil"* - Daryl Dixon
+Bobby Alex Philip
 
 ---
-<!-- header: 'Code blocks' -->
-We can define ``variables`` inline, and code in blocks (with syntax highlighting!!!):
-```java
-    if (marp) {
-        apply.neobeam();
-    }
-```
----
-<!-- header: 'References' -->
-- [System Calls Make the World Go Round](https://manybutfinite.com/post/system-calls/) 
 
+![Image of an iceberg showing various layers in a linux application from distros to kernel. height:720px  center](./assets/iceberg.png) 
 
 ---
+<!-- _header: "**Now to answer an important question**" -->
+  * Not the answer to the Ultimate Question of Life, the Universe, and Everything 
+  * _We already know that is 42_
+  * How many sleeps to International Towel Day?
+
+
+![Cover of the Hitchhiker's guide to the galaxy](./assets/h2g2.jpg)
+
+---
+<!-- _header: "**BINARY**" -->
+
+
