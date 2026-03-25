@@ -70,9 +70,8 @@ strings towelday | grep -i towel #to show parts of what is in a binary
 ---
 <!--_header: "**DISTRO-SPECIFIC PACKAGING**" -->
 
-- Traditional Model
-- Integrated Distribution: Software is packaged specifically for each Linux distribution (e.g. .deb, .rpm)
-- Repository-Based: Delivered via official distro repositories
+- Integrated Distribution: Software is packaged specifically for each Linux distribution (e.g. deb, rpm)
+- Repository-Based: Delivered via repositories
 - Dependency Management: Shared system libraries reduce duplication at the cost of complexity
 - Trade Off: Stable vs Speedy updates
 
@@ -88,10 +87,10 @@ strings towelday | grep -i towel #to show parts of what is in a binary
 
 ---
 <!--_header: "**DISTRO AGNOSTIC PACKAGING**" -->
- - Ship Direct: Cut out the distro middleman and reach all users via a single channel.
- - Rapid Deployment: Users receive the latest software versions instantly, bypassing distro release cycles.
- - Unified Format: Develop once; no need to cater to specific distro packaging requirements (e.g., .deb vs .rpm).
- - Self-Contained: Bundle all necessary dependencies to eliminate "dependency hell."
+ - Ship Direct: Cut out the distro middleman and reach all users via a single channel
+ - Rapid Deployment: Users can receive the latest software versions instantly
+ - Unified Format: No need to cater to specific distro packaging requirements
+ - Self-Contained: Bundle all necessary dependencies to eliminate "dependency hell"
  - Trade Off: Larger application size
 
 ---
