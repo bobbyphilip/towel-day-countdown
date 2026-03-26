@@ -148,10 +148,7 @@ tar -xf data.tar.zst
 -->
 --- 
 <!--_header: "**FURTHER READING**" -->
-- [System Calls](https://manybutfinite.com/post/system-calls/) 
-- [Debian Packaging](https://wiki.debian.org/HowToPackageForDebian)
-- [AppImage vs Snap vs Flatpak](https://github.com/appimage/appimagekit/wiki/similar-projects)
-
-
-
-Slides and code available at https://github.com/bobbyphilip/towel-day-countdown/
+- System Calls https://manybutfinite.com/post/system-calls/
+- Debian Packaging https://wiki.debian.org/HowToPackageForDebian
+- AppImage vs Snap vs Flatpak https://github.com/appimage/appimagekit/wiki/similar-projects
+- Slides and code available at https://github.com/bobbyphilip/towel-day-countdown/
