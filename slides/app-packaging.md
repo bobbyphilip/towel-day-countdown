@@ -4,19 +4,29 @@ theme: uncover
 paginate: true
 footer: 'App packaging in Linux'
 style: |
-  section.center > footer, footer {
-    text-align: left !important;
-    margin: 0 !important;
-  }
-  header strong {
-    color: #000000;
-    font-size: 4.0em; /* Make it larger */
-    font-weight: 800; /* Extra bold */
-  }
-  section {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-  }
+    section.center > footer, footer {
+      text-align: left !important;
+      margin: 0 !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      width: 100% !important;
+      background-color: #4a7ebb;
+      color: white !important;
+      padding: 10px 40px !important;
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+    }
+    header strong {
+      color: #000000;
+      font-size: 4.0em; /* Make it larger */
+      font-weight: 800; /* Extra bold */
+    }
+    section {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
   
 ---
 
