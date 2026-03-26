@@ -35,6 +35,7 @@ $(PLATFORMS):
 	@echo "Architecture: $@" >> $(BUILD_DIR)/$@/DEBIAN/control
 	@echo "Maintainer: $(MAINTAINER)" >> $(BUILD_DIR)/$@/DEBIAN/control
 	@echo "Description: $(DESCRIPTION)" >> $(BUILD_DIR)/$@/DEBIAN/control
+	# To add a dependency to your package, so that apt knows that you expect it
 	#@echo 'Depends: libvlc5 (>= 3.0.0)' >> $(BUILD_DIR)/$@/DEBIAN/control
 
 	dpkg-deb --build $(BUILD_DIR)/$@ $(BINARY_NAME)_$(VERSION)_$@.deb

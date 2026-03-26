@@ -91,7 +91,7 @@ strings towelday | grep -i towel #to show parts of what is in a binary
 | Format | Used By                  | Package Manager |
 |--------|--------------------------|-----------------|
 | .deb   | Debian, Ubuntu,Linux Mint | apt / dpkg     |
-| .rpm   | Fedora, RHEL, CentOS     | dnf / yum       |
+| .rpm   | Fedora, RHEL, CentOS     | dnf / rpm       |
 | .pkg.tar.zst | Arch Linux         | pacman          |
 | .apk   | Alpine Linux             | apk             |
 
@@ -128,14 +128,14 @@ strings towelday | grep -i towel #to show parts of what is in a binary
     - This is where the binary will get installed on the destination system
 - Use ```dpkg-deb``` to build the deb package
     - Unsurprisingly there are many other ways to do this
-- ```dpkg -i package.deb``` to install it without handling dependencies
-- ```apt install package.deb``` to install it and any dependencies
 
 ---
 <!--_header: "**WHAT IS IN A DEB**" -->
 - Compressed archive of what we just built
   - control
   - data
+- ```dpkg -i package.deb``` to install it without handling dependencies
+- ```apt install package.deb``` to install it and any dependencies
 - Installing it places the binary on the system's ```/usr/bin``` folder
 - ```/var/lib/dpkg/status``` to view where dpkg maintains its data
 - ```apt``` is a higher level tool, which uses ```dpkg``` among other tools
