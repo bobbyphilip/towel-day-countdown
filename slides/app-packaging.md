@@ -118,3 +118,37 @@ strings towelday | grep -i towel #to show parts of what is in a binary
 
 ---
 
+<!--_header: "**BUILDING A DEB PACKAGE**" -->
+
+- In your build directory, create a DEBIAN subdirectory
+- Write metadata into a *control* file here
+- Build your binary for your target. Go makes it relatively easily
+- In your build directory, create a ```/usr/bin``` subdirectory
+- Copy the binary here
+    - This is where the binary will get installed on the destination system
+- Use ```dpkg-deb``` to build the deb package
+    - Unsurprisingly there are many other ways to do this
+- ```dpkg -i package.deb``` to install it without handling dependencies
+- ```apt install package.deb``` to install it and any dependencies
+
+---
+<!--_header: "**WHAT IS IN A DEB**" -->
+- Compressed archive of what we just built
+  - control
+  - data
+- Installing it places the binary on the system's ```/usr/bin``` folder
+- ```/var/lib/dpkg/status``` to view where dpkg maintains its data
+- ```apt``` is a higher level tool, which uses ```dpkg``` among other tools
+
+
+
+<!--
+ar -x towelday_0.1.0_amd64.deb
+tar -xf data.tar.zst
+-->
+--- 
+<!--_header: "**FURTHER READING**" -->
+- [System Calls](https://manybutfinite.com/post/system-calls/) 
+- [Debian Packaging](https://wiki.debian.org/HowToPackageForDebian)
+- [AppImage vs Snap vs Flatpak](https://github.com/appimage/appimagekit/wiki/similar-projects)
+
