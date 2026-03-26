@@ -2,9 +2,13 @@
 Build a debian package from go code
 
 
-# To view the slides in your browser
+# To view the slides
 ```
-cd slides
 marp -w  -s ./slides/
+```
+pdf also available in ./slides
+
+# Convert slides to pdf
+```
 marp --pdf --allow-local-files ./app-packaging.md
 ```

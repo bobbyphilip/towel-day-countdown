@@ -152,3 +152,6 @@ tar -xf data.tar.zst
 - [Debian Packaging](https://wiki.debian.org/HowToPackageForDebian)
 - [AppImage vs Snap vs Flatpak](https://github.com/appimage/appimagekit/wiki/similar-projects)
 
+
+
+Slides and code available at https://github.com/bobbyphilip/towel-day-countdown/
