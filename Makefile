@@ -5,22 +5,16 @@ DESCRIPTION="Use this to know how many days are left to international towel day"
 PLATFORMS=amd64 arm64
 BUILD_DIR=build
 
-build:
+build:  ## Build the Go binary
 	go build -o $(BINARY_NAME) main.go
 
-run:
+run:    ## Build and execute the Go binary
 	go run main.go
 
-clean:
-	rm -f $(BINARY_NAME)
-	rm -rf $(BUILD_DIR) *.deb
 
+deb: $(PLATFORMS) ## Build a deb package for amd64 and arm64
 
-
-# Build for all platforms
-deb: $(PLATFORMS)
-
-$(PLATFORMS):
+$(PLATFORMS):   ## Build a deb package for a specific arch
 	@echo "Building .deb for $@"
 	
 	mkdir -p $(BUILD_DIR)/$@/DEBIAN
@@ -41,5 +35,12 @@ $(PLATFORMS):
 	dpkg-deb --build $(BUILD_DIR)/$@ $(BINARY_NAME)_$(VERSION)_$@.deb
 
 
-.PHONY: build run clean deb $(PLATFORMS)
+clean: ## Delete the  build outputs
+	rm -f $(BINARY_NAME)
+	rm -rf $(BUILD_DIR) *.deb
+
+help:     ## Show this help.
+	@sed -ne '/@sed/!s/## //p' $(MAKEFILE_LIST) | column -tl 2
+
+.PHONY: build run deb $(PLATFORMS) clean help
 

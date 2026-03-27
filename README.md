@@ -1,14 +1,23 @@
-# towel-day-countdown
-Build a debian package from go code
+# Towel Day Countdown
+This repository demonstrates a simple Go program and how to package it for Debian. 
+
+## Code
+A simple [Go program](main.go) to calculate the number of days till the next [Towel Day](https://en.wikipedia.org/wiki/Towel_Day)
+
+A [Makefile](Makefile) to build a debian package from this.
+
+See ``make help`` for how to do this
 
 
-# To view the slides
+## Slides
+Slides were written using markdown & can be viewed using [marp](https://marp.app/)
+
 ```
 marp -w  -s ./slides/
 ```
-pdf also available in [./slides](https://github.com/bobbyphilip/towel-day-countdown/blob/main/slides/app-packaging.pdf)
+PDF version also available [here](./slides/app-packaging.pdf)
 
-# Convert slides to pdf
+### Convert slides to pdf
 ```
-marp --pdf --allow-local-files ./app-packaging.md
+marp --pdf --allow-local-files ./slides/app-packaging.md
 ```
