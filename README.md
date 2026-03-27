@@ -6,7 +6,7 @@ Build a debian package from go code
 ```
 marp -w  -s ./slides/
 ```
-pdf also available in ./slides
+pdf also available in [./slides](https://github.com/bobbyphilip/towel-day-countdown/blob/main/slides/app-packaging.pdf)
 
 # Convert slides to pdf
 ```
